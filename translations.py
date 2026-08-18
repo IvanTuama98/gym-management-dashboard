@@ -1,0 +1,40 @@
+TRANSLATIONS = {
+    'es': {
+        'welcome-title': "Panel de Control del Gimnasio",
+        'home-btn': 'Inicio',
+        'login-btn': 'Iniciar sesión',
+        'register-btn': 'Registrarse',
+        'add-client-btn': 'Añadir cliente',
+        'clients-list-btn': 'Lista de clientes',
+        'payment-history-btn': 'Historial de pagos',
+        'settings-btn': 'Configuración',
+        'logout-btn': 'Cerrar sesión',
+        'dashboard-title': 'Panel de control',
+        'add-client-title': 'Añadir cliente',
+        'clients-list-title': 'Lista de clientes',
+        'payment-history-title': 'Historial de pagos',
+        'settings-title': 'Configuración del gimnasio',
+        'charge-btn': 'Cobrar',
+        'edit-btn': 'Editar',
+        'delete-btn': 'Borrar'
+    },
+    'en': {
+        'welcome-title': "Gym Management Dashboard",
+        'home-btn': 'Home',
+        'login-btn': 'Login',
+        'register-btn': 'Register',
+        'add-client-btn': 'Add client',
+        'clients-list-btn': 'List of clients',
+        'payment-history-btn': 'Payment history',
+        'settings-btn': 'Settings',
+        'logout-btn': 'Log out',
+        'dashboard-title': 'Control panel',
+        'add-client-title': 'Add client',
+        'clients-list-title': 'Clients list',
+        'payment-history-title': 'Payment history',
+        'settings-title': 'Gym settings',
+        'charge-btn': 'Charge',
+        'edit-btn': 'Edit',
+        'delete-btn': 'Delete'
+    }
+}
