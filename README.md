@@ -40,7 +40,7 @@ Esta aplicación resuelve la administración diaria de un gimnasio permitiendo a
 ├── helpers.py      # Funciones auxiliares y decoradores
 ├── project.db      # Base de datos SQLite
 └── README.md       # Documentación del proyecto
----
+
 ---
 
 👨‍💻 Autor
