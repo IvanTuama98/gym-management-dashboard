@@ -45,8 +45,6 @@ Esta aplicación resuelve la administración diaria de un gimnasio permitiendo a
 
 ## 🐳 Cómo ejecutar con Docker
 
-## 🐳 Cómo ejecutar con Docker
-
 1. Construir la imagen:
 ```bash
     docker build -t gym-app .
