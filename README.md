@@ -43,6 +43,23 @@ Esta aplicación resuelve la administración diaria de un gimnasio permitiendo a
 ```
 ---
 
+## 🐳 Cómo ejecutar con Docker
+
+## 🐳 Cómo ejecutar con Docker
+
+1. Construir la imagen:
+```bash
+    docker build -t gym-app .
+```
+
+2. Inicial el contenedor:
+```bash
+    docker run -p 5000:5000 gym-app
+```
+
+3. Abrir en el navegador: `http://localhost:5000`
+---
+
 👨‍💻 Autor
 
 Iván Tuamá
