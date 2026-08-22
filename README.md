@@ -2,6 +2,7 @@
 
 Un sistema web dinámico e interactivo diseñado para la gestión integral de un centro de entrenamiento. Desarrollado como **Proyecto Final para CS50x (Harvard University)**.
 
+🌐 **Demo en vivo:** https://gym-dashboard-app.onrender.com/
 🎬 **Video Demostrativo:** [Ver demo en YouTube](AQUÍ_TU_LINK_DE_YOUTUBE)
 
 ---
