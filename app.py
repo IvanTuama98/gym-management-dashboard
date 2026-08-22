@@ -1,10 +1,14 @@
+import os
 import sqlite3
 from flask import Flask, render_template, url_for, request, redirect, session, flash
+from dotenv import load_dotenv
 from datetime import datetime, timedelta
 from werkzeug.security import generate_password_hash, check_password_hash
 from translations import TRANSLATIONS
 app = Flask(__name__)
-app.secret_key = "secret_key_for_development"
+
+load_dotenv()
+app.secret_key = os.getenv('SECRET_KEY')
 
 
 @app.route("/")
