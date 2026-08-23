@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  # Servidor de Base de Datos (PostgreSQL)
+  db:
+    image: postgres:15-alpine
+    container_name: gym_postgres_db
+    restart: always
+    environment:
+      POSTGRES_USER: gymuser
+      POSTGRES_PASSWORD: gympassword
+      POSTGRES_DB: gymdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # Tu Aplicación Flask
+  web:
+    build: .
+    container_name: gym_flask_app
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=postgresql://gymuser:gympassword@db:5432/gymdb
+      - SECRET_KEY=clave_desarrollo_local_123
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:
