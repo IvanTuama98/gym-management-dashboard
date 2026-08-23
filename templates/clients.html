@@ -1,24 +1,24 @@
 {% extends "layout.html" %}
 
-{% block title %} Clients list {% endblock %}
+{% block title %} {{ get_text('clients-list') }} {% endblock %}
 
 {% block content %}
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md col-lg">
             <div class="card shadow-sm p-4">
-                <h3 class="text-center mb-4">{{ get_text('clients-list-title') }}</h3>
+                <h3 class="text-center mb-4">{{ get_text('clients-list') }}</h3>
                 <div class="table-responsive">
                     <table class="table table-striped table-bordered table-hover align-middle">
                         <thead>
                             <tr>
                                 <th scope="col">ID</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Phone</th>
-                                <th scope="col">Registration Date</th>
-                                <th scope="col">Last Payment</th>
-                                <th scope="col">Status</th>
-                                <th scope="col">Actions</th>
+                                <th scope="col">{{ get_text('name') }}</th>
+                                <th scope="col">{{ get_text('phone') }}</th>
+                                <th scope="col">{{ get_text('registration-date') }}</th>
+                                <th scope="col">{{ get_text('last-payment') }}</th>
+                                <th scope="col">{{ get_text('status') }}</th>
+                                <th scope="col">{{ get_text('actions') }}</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -48,7 +48,7 @@
                                 </tr>
                             {% else %}
                                 <tr>
-                                    <td colspan="7" class="text-center">No clients added yet.</td>
+                                    <td colspan="7" class="text-center">{{ get_text('no-clients-t') }}</td>
                                 </tr>
                             {% endfor %}
                         </tbody>

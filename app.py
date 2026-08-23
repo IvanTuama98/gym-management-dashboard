@@ -5,9 +5,11 @@ from dotenv import load_dotenv
 from datetime import datetime, timedelta
 from werkzeug.security import generate_password_hash, check_password_hash
 from translations import TRANSLATIONS
-app = Flask(__name__)
+
 
 load_dotenv()
+
+app = Flask(__name__)
 app.secret_key = os.getenv('SECRET_KEY')
 
 

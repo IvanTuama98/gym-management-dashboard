@@ -11,16 +11,16 @@
 
                 <form action="/settings" method="POST">
                     <div class="form-group">
-                        <label for="monthly_fee">Monthly fee:</label>
+                        <label for="monthly_fee">{{ get_text('monthly-fee') }}:</label>
                         <input class="form-control mb-3" type="number" name="monthly_fee" value="{{ settings.monthly_fee | default(0) }}">
-                        <label for="due_day">Due day:</label>
+                        <label for="due_day">{{ get_text('due-day') }}:</label>
                         <input class="form-control mb-3" type="number" name="due_day" value="{{ settings.due_day | default(15) }}">
-                        <label for="late_fee">Late fee:</label>
+                        <label for="late_fee">{{ get_text('late-fee') }}:</label>
                         <input class="form-control mb-3" type="number" name="late_fee" value="{{ settings.late_fee | default(0) }}">
                     </div>
                     <div class="d-grid gap-2">
-                        <button type="submit" class="btn btn-primary">Save changes</button>
-                        <a href="/" class="btn btn-secondary">Cancel</a>
+                        <button type="submit" class="btn btn-primary">{{ get_text('save-changes') }}</button>
+                        <a href="/" class="btn btn-secondary">{{ get_text('cancel') }}</a>
                     </div>
                 </form>
             </div>

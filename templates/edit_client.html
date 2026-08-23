@@ -1,32 +1,32 @@
 {% extends "layout.html" %}
 
-{% block title %} Edit client {% endblock %}
+{% block title %} {{ get_text('edit-client') }} {% endblock %}
 
 {% block content %}
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-6 col-lg-4">
             <div class="card shadow-sm p-4">
-                <h3 class="text-center mb-4">Edit client</h3>
+                <h3 class="text-center mb-4">{{ get_text('edit-client') }}</h3>
 
                 <form action="/clients/edit/{{ client[0] }}" method="POST">
                     
                     <!-- Name -->
                     <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
+                        <label for="name" class="form-label">{{ get_text('name') }}</label>
                         <input type="text" name="name" id="name" class="form-control" value="{{ client.name }}" required>
                     </div>
 
                     <!-- Phone -->
                     <div class="mb-3">
-                        <label for="phone" class="form-label">Phone</label>
+                        <label for="phone" class="form-label">{{ get_text('phone') }}</label>
                         <input type="text" name="phone" id="phone" class="form-control" value="{{ client.phone }}" required>
                     </div>
 
                     <!-- Save and cancel buttons -->
                     <div class="d-grid gap-2">
-                        <button type="submit" class="btn btn-primary">Save changes</button>
-                        <a href="/clients" class="btn btn-secondary">Cancel</a>
+                        <button type="submit" class="btn btn-primary">{{ get_text('save-changes') }}</button>
+                        <a href="/clients" class="btn btn-secondary">{{ get_text('cancel') }}</a>
                     </div>
 
                 </form>

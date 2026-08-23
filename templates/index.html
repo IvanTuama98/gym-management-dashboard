@@ -8,10 +8,10 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <h2 class="fw-bold mb-1">{{ get_text('dashboard-title') }}</h2>
-            <p class="text-muted mb-0">General overview of your gym</p>
+            <p class="text-muted mb-0">{{ get_text('dashboard-text') }}</p>
         </div>
         <a href="/add_payment" class="btn btn-primary fw-bold">
-            <i class="bi bi-cash-stack"></i> Register payment
+            <i class="bi bi-cash-stack"></i> {{ get_text('register-payment') }}
         </a>
     </div>
 
@@ -21,9 +21,9 @@
         <div class="col-md-4">
             <div class="card shadow-sm h-100 p-3 border-start border-primary border-4">
                 <div class="card-body p-0">
-                    <h6 class="text-muted text-uppercase fw-bold small">Active Clients</h6>
+                    <h6 class="text-muted text-uppercase fw-bold small">{{ get_text('active-clients-t') }}</h6>
                     <h2 class="fw-bold my-2">{{ active_clients }}</h2>
-                    <small class="text-muted">Paid within last 30 days</small>
+                    <small class="text-muted">{{ get_text('active-clients-p') }}</small>
                 </div>
             </div>
         </div>
@@ -32,9 +32,9 @@
         <div class="col-md-4">
             <div class="card shadow-sm h-100 p-3 border-start border-success border-4">
                 <div class="card-body p-0">
-                    <h6 class="text-muted text-uppercase fw-bold small">Monthly Earnings</h6>
+                    <h6 class="text-muted text-uppercase fw-bold small">{{ get_text('monthly-earnings-t') }}</h6>
                     <h2 class="fw-bold my-2">${{ "%.2f"|format(monthly_earnings) }}</h2>
-                    <small class="text-muted">This month's revenue</small>
+                    <small class="text-muted">{{ get_text('monthly-earnings-p') }}</small>
                 </div>
             </div>
         </div>
@@ -43,9 +43,9 @@
         <div class="col-md-4">
             <div class="card shadow-sm h-100 p-3 border-start border-info border-4">
                 <div class="card-body p-0">
-                    <h6 class="text-muted text-uppercase fw-bold small">Total Revenue</h6>
+                    <h6 class="text-muted text-uppercase fw-bold small">{{ get_text('total-revenue-t') }}</h6>
                     <h2 class="fw-bold my-2">${{ "%.2f"|format(total_revenue) }}</h2>
-                    <small class="text-muted">All-time earnings</small>
+                    <small class="text-muted">{{ get_text('total-revenue-p') }}</small>
                 </div>
             </div>
         </div>
@@ -53,16 +53,16 @@
 
     <!-- Quick Actions Card -->
     <div class="card shadow-sm p-4 text-center">
-        <h5 class="fw-bold mb-3">Quick Actions</h5>
+        <h5 class="fw-bold mb-3">{{ get_text('quick-actions') }}</h5>
         <div class="d-flex justify-content-center gap-2 flex-wrap">
             <a href="/clients/add" class="btn btn-outline-primary">
-                <i class="bi bi-person-plus"></i> Add new client
+                <i class="bi bi-person-plus"></i> {{ get_text('qa-btn1') }}
             </a>
             <a href="/clients" class="btn btn-outline-secondary">
-                <i class="bi bi-people"></i> View list of clients
+                <i class="bi bi-people"></i> {{ get_text('qa-btn2') }}
             </a>
             <a href="/payments" class="btn btn-outline-info">
-                <i class="bi bi-receipt"></i> Payment history
+                <i class="bi bi-receipt"></i> {{ get_text('qa-btn3') }}
             </a>
         </div>
     </div>

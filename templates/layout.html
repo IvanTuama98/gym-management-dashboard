@@ -22,13 +22,13 @@
                     <!-- Conditionals Jinja2 for login / logout -->
                     {% if session.get("user_id") %}
                     <li class="nav-item">
-                        <a class="nav-link" href="/clients/add">{{ get_text('add-client-btn') }}</a>
+                        <a class="nav-link" href="/clients/add">{{ get_text('add-client') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/clients">{{ get_text('clients-list-btn') }}</a>
+                        <a class="nav-link" href="/clients">{{ get_text('clients-list') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/payments">{{ get_text('payment-history-btn') }}</a>
+                        <a class="nav-link" href="/payments">{{ get_text('payment-history') }}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/settings">{{ get_text('settings-btn') }}</a>

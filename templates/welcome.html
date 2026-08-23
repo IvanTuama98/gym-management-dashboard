@@ -8,11 +8,11 @@
     <div class="p-5 mb-5 bg-light rounded-3 text-center border shadow-sm">
         <h1 class="display-4 fw-bold text-dark">{{ get_text('welcome-title') }}</h1>
         <p class="lead text-muted fs-4 my-3">
-            The all-in-one solution for small gyms and independent personal trainers to track client memberships, manage payments, and view real-time revenue analytics.
+            {{ get_text('welcome-text') }}
         </p>
         <div class="d-flex justify-content-center gap-3 mt-4">
-            <a href="/register" class="btn btn-primary btn-lg fw-bold px-4">Get Started / Register</a>
-            <a href="/login" class="btn btn-outline-dark btn-lg fw-bold px-4">Log In</a>
+            <a href="/register" class="btn btn-primary btn-lg fw-bold px-4">{{ get_text('welcome-register-btn') }}</a>
+            <a href="/login" class="btn btn-outline-dark btn-lg fw-bold px-4">{{ get_text('welcome-login-btn') }}</a>
         </div>
     </div>
 
@@ -22,8 +22,8 @@
             <div class="card h-100 shadow-sm border-0 bg-white p-3">
                 <div class="card-body">
                     <div class="fs-1 text-primary mb-2">👥</div>
-                    <h5 class="card-title fw-bold">Dynamic Client Tracking</h5>
-                    <p class="card-text text-muted">Automatically track active vs. overdue client memberships based on 30-day payment cycles.</p>
+                    <h5 class="card-title fw-bold">{{ get_text('welcome-card_1-title') }}</h5>
+                    <p class="card-text text-muted">{{ get_text('welcome-card_1-text') }}</p>
                 </div>
             </div>
         </div>
@@ -31,8 +31,8 @@
             <div class="card h-100 shadow-sm border-0 bg-white p-3">
                 <div class="card-body">
                     <div class="fs-1 text-success mb-2">💳</div>
-                    <h5 class="card-title fw-bold">Payment History</h5>
-                    <p class="card-text text-muted">Record monthly dues effortlessly with default fee suggestions and structured receipt logs.</p>
+                    <h5 class="card-title fw-bold">{{ get_text('welcome-card_2-title') }}</h5>
+                    <p class="card-text text-muted">{{ get_text('welcome-card_2-text') }}</p>
                 </div>
             </div>
         </div>
@@ -40,8 +40,8 @@
             <div class="card h-100 shadow-sm border-0 bg-white p-3">
                 <div class="card-body">
                     <div class="fs-1 text-info mb-2">📊</div>
-                    <h5 class="card-title fw-bold">Real-time Metrics</h5>
-                    <p class="card-text text-muted">Monitor your current monthly earnings alongside total historical revenue on a clean dashboard.</p>
+                    <h5 class="card-title fw-bold">{{ get_text('welcome-card_3-title') }}</h5>
+                    <p class="card-text text-muted">{{ get_text('welcome-card_3-text') }}</p>
                 </div>
             </div>
         </div>
