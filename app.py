@@ -383,8 +383,8 @@ def add_payment(client_id=None):
                 
                 if days_diff > 30:
                     suggested_amount = monthly_fee + late_fee
-            else:
-                suggested_amount = monthly_fee + late_fee
+                else:
+                    suggested_amount
 
         conn.close()
 
